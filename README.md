@@ -197,8 +197,8 @@ python -m venv venv
 # Activate the virtual environment
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install initial dependencies
-pip install jupyter pandas numpy matplotlib scikit-learn
+# Install initial dependencies/Freeze used ones
+pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 
@@ -251,11 +251,11 @@ ACTION=${1:-"dashboard"}  # Default action
 case "$ACTION" in
     dashboard)
         echo "Starting dashboard..."
-        streamlit run dashboard/dashboard.py
+        # Replace this with dashboard run command
         ;;
     notebook)
         echo "Starting Jupyter notebook server..."
-        jupyter notebook --notebook-dir=notebooks
+        # Replace this with JupyterNotebook Server start command
         ;;
     # Add other actions as needed
     *)
