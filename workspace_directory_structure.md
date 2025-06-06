@@ -3,7 +3,7 @@
 ## Proposed Directory Structure
 
 ```
-RecipeReadiness/
+ProjectName/
 │
 ├── dashboard/                  # Dashboard application
 │   ├── dashboard.py            # Main Streamlit app
